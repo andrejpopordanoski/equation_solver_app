@@ -1,0 +1,36 @@
+{
+  "name": "components",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "test": "jest --passWithNoTests"
+  },
+  "peerDependencies": {
+    "@types/react": "*",
+    "@types/react-native": "*",
+    "react": "*",
+    "react-native": "*"
+  },
+  "dependencies": {
+    "@react-native-community/async-storage": "^1.12.1",
+    "@react-navigation/native": "^5.9.4",
+    "@types/react-router-dom": "^5.1.7",
+    "axios": "^0.21.1",
+    "base-64": "^1.0.0",
+    "dotenv": "^10.0.0",
+    "file-system": "^2.2.2",
+    "path": "^0.12.7",
+    "react-native-config": "^1.4.2",
+    "react-native-logs": "^3.0.4",
+    "react-redux": "^7.2.4",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.1.0",
+    "redux-persist": "^6.0.0",
+    "redux-promise-middleware": "^6.1.2",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "@types/base-64": "^1.0.0",
+    "babel-plugin-module-resolver": "^4.1.0"
+  }
+}
