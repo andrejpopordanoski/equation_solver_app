@@ -15,7 +15,7 @@ declare global {
 const middleware = applyMiddleware(promise, thunk);
 
 export const persistConfig = {
-    key: 'testkit',
+    key: 'equationSolver',
     storage: AsyncStorage,
     whitelist: ['auth'],
 };

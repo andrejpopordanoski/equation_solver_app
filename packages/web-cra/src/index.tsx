@@ -2,7 +2,7 @@ import { AppRegistry } from 'react-native'
 
 import { App } from 'components/src/App'
 
-AppRegistry.registerComponent('testkit', () => App)
-AppRegistry.runApplication('testkit', {
+AppRegistry.registerComponent('equationSolver', () => App)
+AppRegistry.runApplication('equationSolver', {
   rootTag: document.getElementById('root'),
 })

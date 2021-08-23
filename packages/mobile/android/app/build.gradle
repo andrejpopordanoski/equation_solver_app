@@ -139,11 +139,14 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.testkit"
+        applicationId "com.equationSolver"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
+        missingDimensionStrategy 'react-native-camera', 'general' // <--- insert this line
+        multiDexEnabled true
+
     }
     splits {
         abi {
@@ -196,6 +199,9 @@ dependencies {
     implementation "com.facebook.react:react-native:+"  // From node_modules
     implementation project(':react-native-config')
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
+    implementation project(':react-native-camera')
+    implementation 'androidx.multidex:multidex:2.0.1'  //with androidx libraries
+
 
     debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}") {
       exclude group:'com.facebook.fbjni'

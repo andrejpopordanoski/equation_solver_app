@@ -23,6 +23,7 @@ export const getAction = async (dispatch: any, constant: any, api: any) => {
 export const postAction = async (dispatch: any, constant: any, api: any, data: any) => {
     dispatch({ type: buildActionType(constant, ActionStatus.START) });
     const response = await PostApiRequest(api, data, undefined);
+
     if (response.success) {
         dispatch({
             type: buildActionType(constant, ActionStatus.DONE),

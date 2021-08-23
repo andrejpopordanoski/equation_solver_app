@@ -64,7 +64,7 @@ const refreshProviderToken = async (dispatch: (arg0: { type: string; payload?: a
 const logoutAction = () => async (dispatch: (arg0: { type: string }) => void) => {
     try {
         dispatch({ type: buildActionType(LOGOUT, ActionStatus.DONE) });
-        await AsyncStorage.removeItem('persist:testkit');
+        await AsyncStorage.removeItem('persist:equationSolver');
         return true;
     } catch (exception) {
         debugLogger.warn('Exception with logout action ', exception);

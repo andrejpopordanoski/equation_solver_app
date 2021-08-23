@@ -3,12 +3,12 @@ require_relative '../../../node_modules/@react-native-community/cli-platform-ios
 
 platform :ios, '10.0'
 
-target 'testkit' do
+target 'equationSolver' do
   config = use_native_modules!
 
   use_react_native!(:path => config[:reactNativePath])
 
-  target 'testkitTests' do
+  target 'equationSolverTests' do
     inherit! :complete
     # Pods for testing
   end
@@ -23,10 +23,10 @@ target 'testkit' do
   end
 end
 
-target 'testkit-tvOS' do
-  # Pods for testkit-tvOS
+target 'equationSolver-tvOS' do
+  # Pods for equationSolver-tvOS
 
-  target 'testkit-tvOSTests' do
+  target 'equationSolver-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end

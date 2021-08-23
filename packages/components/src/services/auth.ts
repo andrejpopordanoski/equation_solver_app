@@ -1,6 +1,6 @@
 import AsyncStorage from '@react-native-community/async-storage';
 
-const PERSIST_KEY = 'persist:testkit';
+const PERSIST_KEY = 'persist:equationSolver';
 
 const authService = {
     _user: null,

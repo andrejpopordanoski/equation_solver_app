@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-               BuildableName = "testkit-tvOS.app"
-               BlueprintName = "testkit-tvOS"
-               ReferencedContainer = "container:testkit.xcodeproj">
+               BuildableName = "equationSolver-tvOS.app"
+               BlueprintName = "equationSolver-tvOS"
+               ReferencedContainer = "container:equationSolver.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "testkit-tvOSTests.xctest"
-               BlueprintName = "testkit-tvOSTests"
-               ReferencedContainer = "container:testkit.xcodeproj">
+               BuildableName = "equationSolver-tvOSTests.xctest"
+               BlueprintName = "equationSolver-tvOSTests"
+               ReferencedContainer = "container:equationSolver.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "testkit-tvOS.app"
-            BlueprintName = "testkit-tvOS"
-            ReferencedContainer = "container:testkit.xcodeproj">
+            BuildableName = "equationSolver-tvOS.app"
+            BlueprintName = "equationSolver-tvOS"
+            ReferencedContainer = "container:equationSolver.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "testkit-tvOS.app"
-            BlueprintName = "testkit-tvOS"
-            ReferencedContainer = "container:testkit.xcodeproj">
+            BuildableName = "equationSolver-tvOS.app"
+            BlueprintName = "equationSolver-tvOS"
+            ReferencedContainer = "container:equationSolver.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

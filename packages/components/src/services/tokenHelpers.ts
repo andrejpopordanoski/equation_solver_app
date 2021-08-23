@@ -3,7 +3,7 @@ import AsyncStorage from '@react-native-community/async-storage';
 
 export const tokenHelper = {
     async getToken() {
-        const persist = await AsyncStorage.getItem('persist:testkit');
+        const persist = await AsyncStorage.getItem('persist:equationSolver');
 
         if (persist) {
             try {
@@ -17,7 +17,7 @@ export const tokenHelper = {
         }
     },
     async getRefreshToken() {
-        const persist = await AsyncStorage.getItem('persist:testkit');
+        const persist = await AsyncStorage.getItem('persist:equationSolver');
         if (persist) {
             try {
                 const { refreshToken } = JSON.parse(JSON.parse(persist).auth).data.data;
@@ -30,7 +30,7 @@ export const tokenHelper = {
         }
     },
     async IsAccessTokenExpired() {
-        const persist = await AsyncStorage.getItem('persist:testkit');
+        const persist = await AsyncStorage.getItem('persist:equationSolver');
         if (persist) {
             try {
                 const { data } = JSON.parse(JSON.parse(persist).auth).data;
@@ -39,7 +39,7 @@ export const tokenHelper = {
                 const date_now = Date.now();
                 return (date_now - token_creation) / 1000 + 500 > expires_in;
             } catch (message) {
-                console.warn('Catch exception parsing persist:testkit', message);
+                console.warn('Catch exception parsing persist:equationSolver', message);
                 return false;
             }
         } else {
