@@ -45,11 +45,11 @@ export function CustomSideMenu({ children, menuComponent, isOpen, onChange }) {
                 useNativeDriver: false,
             }).start(() => {
                 // setMenuOpened(true);
-                // setTimeout(() => {
-                //     if (onChange) {
-                //         onChange(menuOpened);
-                //     }
-                // }, 100)
+                setTimeout(() => {
+                    if (onChange) {
+                        onChange(menuOpened);
+                    }
+                }, 100);
             });
         } else {
             Animated.timing(pan, {

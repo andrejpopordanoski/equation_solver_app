@@ -6,7 +6,7 @@ import { debugLogger } from './logger';
 console.log(env);
 
 // export const API_ENDPOINT = env.REACT_APP_PATH;
-export const API_ENDPOINT = 'http://192.168.0.105:8000';
+export const API_ENDPOINT = 'http://192.168.1.104:8000';
 
 const requestsLog: { date: string; urlRequested: any; requestType: any; requestData: any; wasSuccessful: boolean; error?: any }[] = [];
 

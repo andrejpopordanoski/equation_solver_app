@@ -7,6 +7,7 @@ project.ext.envConfigFiles = [
 ]
 
 apply from: project(':react-native-config').projectDir.getPath() + "/dotenv.gradle"
+apply from: "../../../../node_modules/react-native-vector-icons/fonts.gradle"
 
 
 import com.android.build.OutputFile
@@ -201,6 +202,7 @@ dependencies {
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
     implementation project(':react-native-camera')
     implementation 'androidx.multidex:multidex:2.0.1'  //with androidx libraries
+    compile project(':react-native-vector-icons')
 
 
     debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}") {
